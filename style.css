@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
 }
 
 *,
@@ -28,32 +33,13 @@
   }
 /* ===== Scrollbar CSS ===== */
 
-.greetingText1 {
-    padding-top: 10vh;
-    font-size: 1.5rem;
-    color: #fff;
-    position: absolute;
-    transform: translateX(-89%);
-}
-
-.greetingText2 {
-    font-size: 1.3rem;
-    color: #fff;
-    transform: translateX(-345%);
-}
-
-.andText {
-    position: absolute;
-    transform: translate(-35vw, 48vh);
-    font-size: 7rem;
-}
 
 .main-title {
-    padding: 15vh 0 0 0;
     font-family: "Josefin Sans", sans-serif;
     font-size: 4vw;
     margin: 0;
-    padding-bottom: 0.5rem;
+    padding-top: 4%;
+    padding-bottom: 3%;
     letter-spacing: 0.5rem;
     color: #03dac6;
     transition: all 0.3s ease;
@@ -91,6 +77,76 @@ section {
 h1 {
     color: #fff;
     text-shadow: 1px, 1px 4px #290f27;
+}
+
+.projectsContainer {
+    width: 80%;
+    height: 65%;
+    background-color: #101014;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 5%, black 95%, transparent 100%);
+}
+
+.project {
+    height: 90%;
+    width: 23%;
+    background-color: #23242c;
+    border-radius: 15px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.projectImg {
+    width: 100%;
+    height: auto;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.project h2 {
+    padding-left: 2%;
+    font-size: 19px;
+    color: white;
+}
+
+.project h4 {
+    padding-left: 4%;
+    font-size: 13px;
+    color: rgb(192, 191, 191);
+}
+
+.project h3 {
+    padding-left: 2%;
+    font-size: 17px;
+    color: white;
+}
+
+.projectlanguages {
+    width: 100%;
+    height: 25%;
+    background-color: #2f3038;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    mask-image: 
+    linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 10%, black 90%, transparent 100%);
+    mask-composite: intersect;
+    -webkit-mask-composite: intersect;
+}
+
+.projectLanguageImg {
+    width: 200px;
+    height: auto;
+    margin-left: -60px;
+    margin-right: -60px;
 }
 
 .wrapper {
